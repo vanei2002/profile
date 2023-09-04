@@ -1,27 +1,68 @@
+@use'../../sass/variables'
 
 
-    #home
-        margin-top: 6rem
-        height: 40rem
-        display: flex
-        
-        > div
-            display: flex
-            width: 50%
-            justify-content: center
-            align-items: center
-            
+#home
+    margin-top: 6rem
+    height: 40rem
+    display: flex
+    transition: 2s
+    position: relative
+
+    @keyframes moveIcons 
+        0% 
+            transform: translate(0, 0)
+                
+        100% 
+            transform: translate(50px, 50px)
+                
+    .profile   
+        position: relative
+        height: 100vh
+        overflow: hidden
+
         img
             width: 31rem
             height: 31rem
             transform: rotate(-4deg)
-            flex-shrink: 0
-            border-radius: 100%
-            background: cover
             transition: 2s
+            animation: profile 2s infinite alternate linear
+            border-radius: 2%
+            position: absolute
+            top: 8%
+            left: 8
+            cursor: pointer
+            
 
 
-        .text
-            p
-                font-size: 3.125rem
-                color: #fff
+    .text
+        p
+            font-size: 2.5rem
+            color: variables.$text
+            position: relative
+
+    > div
+        display: flex
+        width: 50%
+        justify-content: center
+        align-items: center
+
+#icons       
+    height: 640px
+    position: relative
+
+    .icon
+        width: 70px
+        transition: 2s
+        animation: moveIcons 4s infinite alternate linear
+        cursor: pointer
+
+
+
+
+        @keyframes profile
+            0%
+                transform: scale(0.8)
+            100%
+                transform: scale(1)
+
+

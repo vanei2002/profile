@@ -4,7 +4,7 @@ export const Navegation = () => {
   return (
     <nav>
       <span id="logo">
-        <p>VM</p>
+        <p>&lt; Vanei Mendes &#47; &gt;</p>
       </span>
 
       <ul id="container_links">
