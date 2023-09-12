@@ -8,6 +8,7 @@
     transition: 2s
     position: relative
 
+
     @keyframes moveIcons 
         0% 
             transform: translate(0, 0)
@@ -17,16 +18,18 @@
                 
     .profile   
         position: relative
-        height: 100vh
+        height: 100vh   
         overflow: hidden
+        
 
         img
             width: 31rem
             height: 31rem
-            transform: rotate(-4deg)
+            // transform: rotate(-5deg)
             transition: 2s
             animation: profile 2s infinite alternate linear
-            border-radius: 2%
+            border-radius: 10%
+            border: none
             position: absolute
             top: 8%
             left: 8
@@ -35,6 +38,8 @@
 
 
     .text
+        text-align: center
+
         p
             font-size: 2.5rem
             color: variables.$text
@@ -46,9 +51,17 @@
         justify-content: center
         align-items: center
 
+    
+        // @keyframes profile
+        //     0%
+        //         transform: scale(0.8)
+        //     100%
+        //         transform: scale(1)
+
 #icons       
     height: 640px
     position: relative
+    display: flex
 
     .icon
         width: 70px
@@ -56,13 +69,9 @@
         animation: moveIcons 4s infinite alternate linear
         cursor: pointer
 
+    #arrow
+        width: 80px
 
 
-
-        @keyframes profile
-            0%
-                transform: scale(0.8)
-            100%
-                transform: scale(1)
 
 

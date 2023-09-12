@@ -1,13 +1,19 @@
 @use'../sass/variables'
 
+$scrollbar-color: #ff0000
+
 * 
     padding: 0
     margin: 0
     font-family: Inter
 
-
 body 
     background: variables.$background
     height: 100vh
     height: 7000px
-    font-size: rem
+    color: variables.$textsecond
+
+    &::-webkit-scrollbar
+        width: 5px
+    &::-webkit-scrollbar-thumb
+        background: variables.$text

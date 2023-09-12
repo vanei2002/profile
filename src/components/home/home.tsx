@@ -42,7 +42,6 @@ export const HomePage = () => {
         x: Math.random() * (widthHome - 100),
         y: Math.random() * (heightHome - 100),
       }))
-
       setIconPositions(positions)
     }, 5000)
 
@@ -53,12 +52,13 @@ export const HomePage = () => {
   const [text, setText] = useState<string>('')
   const phrase = `< Olá, sou Vanei Mendes, um apaixonado Desenvolvedor Full Stack. 
   Minha jornada é guiada pela busca constante de inovação e excelência no vasto universo da tecnologia. 
-  Estou aqui para criar soluções incríveis e transformar ideias em realidade. 
   Vamos explorar juntos as possibilidades infinitas da tecnologia e criar algo extraordinário! / >`
+
   const speed = 110
   let index = -1
 
   useEffect(() => {
+    if (text) return
     const interval = setInterval(() => {
       if (index < phrase.length) {
         setText((prevText) => prevText + phrase.charAt(index))
@@ -101,7 +101,7 @@ export const HomePage = () => {
       <div id="home">
         <div className="profile" style={backgroundStyle}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="./IMG_3798.jpg" alt="Perfil" />
+          <img src="./Perfil2.jpg" alt="Perfil" />
         </div>
 
         <div className="text">
