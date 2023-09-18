@@ -9,7 +9,7 @@ export default function Home() {
     <main id="container">
       <HomePage />
       <SoftwareSkills />
-      <ProjectsGitHub/>
+      <ProjectsGitHub />
     </main>
   )
 }

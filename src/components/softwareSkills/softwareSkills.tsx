@@ -5,7 +5,6 @@ import Aos from 'aos'
 import Prism from 'prismjs'
 import 'prismjs/themes/prism-okaidia.css'
 import './softwareskills.sass'
-
 import 'aos/dist/aos.css'
 
 export const SoftwareSkills = () => {
