@@ -1,76 +1,74 @@
 @use'../../sass/variables'
 
 
-#home
-    margin-top: 6rem
-    height: 40rem
-    display: flex
-    transition: 2s
-    position: relative
+#container-home
 
-
-    @keyframes moveIcons 
-        0% 
-            transform: translate(0, 0)
-                
-        100% 
-            transform: translate(50px, 50px)
-                
-    .profile   
+    #home
+        margin-top: 6rem
+        height: 40rem
+        display: flex
+        transition: 2s
         position: relative
-        height: 100vh   
-        overflow: hidden
-        
+        // 
+        // flex-direction: row-reverse
 
-        img
-            width: 30rem
-            height: 30rem
-            transform: rotate(-4deg)
-            transition: 2s
-            animation: profile 2s infinite alternate linear
-            border-radius: 100%
-            border: none
-            position: absolute
-            top: 8%
-            left: 8
-            cursor: pointer
+
+        @keyframes moveIcons 
+            0% 
+                transform: translate(0, 0)
+                    
+            100% 
+                transform: translate(50px, 50px)
+                    
+        .profile   
+            position: relative
+            height: 100vh   
+            overflow: hidden
             
 
+            img
+                min-width: 28rem
+                max-height: 28rem
+                transform: rotate(-4deg)
+                transition: 2s
+                border-radius: 100%
+                border: none
+                position: absolute
+                top: 8%
+                left: 8
+                cursor: pointer
+           
+                  
 
-    .text
-        text-align: center
 
-        p
-            font-size: 2.5rem
-            color: variables.$text
-            position: relative
+        .text
+            text-align: center
 
-    > div
+            p
+                font-size: 2.5rem
+                color: variables.$text
+                position: relative
+
+        > div
+            display: flex
+            width: 50%
+            justify-content: center
+            align-items: center
+
+
+    #icons       
+        height: 640px
+        position: relative
         display: flex
-        width: 50%
-        justify-content: center
-        align-items: center
 
-    
-        // @keyframes profile
-        //     0%
-        //         transform: scale(0.8)
-        //     100%
-        //         transform: scale(1)
+        .icon
+            width: 70px
+            transition: 2s
+            animation: moveIcons 4s infinite alternate linear
+            cursor: pointer
 
-#icons       
-    height: 640px
-    position: relative
-    display: flex
-
-    .icon
-        width: 70px
-        transition: 2s
-        animation: moveIcons 4s infinite alternate linear
-        cursor: pointer
-
-    #arrow
-        width: 80px
+        #arrow
+            width: 80px
 
 
 

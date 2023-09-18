@@ -1,6 +1,12 @@
+
+'use client'
+
+import { useEffect } from 'react'
+import { Link, animateScroll as scroll } from "react-scroll";
 import './navegation.sass'
 
 export const Navegation = () => {
+
   return (
     <nav>
       <span id="logo">
@@ -8,11 +14,11 @@ export const Navegation = () => {
       </span>
 
       <ul id="container_links">
-        <li className="links">Home</li>
-        <li className="links">Project</li>
-        <li className="links">Skils</li>
-        <li className="links">Experience</li>
-        <li className="links">Contact</li>
+        <Link className="link"to="container-home" smooth>Home</Link>
+        <Link className="links" to='container-tecs' smooth>Skils</Link>
+        <Link className="links" to='projectAnd' smooth>Project</Link>
+        <Link className="links" to='' smooth>Experience</Link>
+        <Link className="links" to='' smooth  >Contact</Link>
       </ul>
     </nav>
   )

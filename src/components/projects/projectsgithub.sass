@@ -1,5 +1,43 @@
+@use'../../sass/variables'
 
-h1
-    text-align: center
-    font-size: 3rem
-    margin: 2rem 0
+#projectAnd
+    padding-top: 2rem
+
+    h1
+        text-align: center
+        font-size: 3rem
+        margin: 2rem 0
+
+    #carrosel
+        margin-top: 10rem
+        
+        #container-proj
+            display: flex
+            width: 80%
+            margin: 0 auto
+            align-content: center
+
+            img
+                width: 40%
+                transition: 1s
+                transform: rotateY(0deg) scale(.8)
+
+                &:hover
+                    transform: rotate(-15deg) rotatey(-0deg)
+
+
+            #text-proj
+                text-align: center
+                margin-left: auto
+                border-radius: 5%
+                background: rgba(40, 40, 40, 0.30)
+                width: 50%
+
+                p
+                    margin-top: 5rem
+                    font-size: 1.5rem
+
+                a
+                    text-decoration: none
+                    color: variables.$text
+    

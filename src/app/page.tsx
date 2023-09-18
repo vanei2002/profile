@@ -7,7 +7,6 @@ import { ProjectsGitHub } from '@/components/projects/projectsGitHub'
 export default function Home() {
   return (
     <main id="container">
-      <Navegation />
       <HomePage />
       <SoftwareSkills />
       <ProjectsGitHub/>

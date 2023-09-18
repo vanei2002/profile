@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import './home.sass'
+import { Navegation } from '../navegation/navegation'
 
 export const HomePage = () => {
   // Animação dos icones
@@ -9,8 +10,9 @@ export const HomePage = () => {
     { x: number; y: number }[]
   >([])
 
-  const widthHome = 1600
-  const heightHome = 640
+
+  const widthHome: number = 1600
+  const heightHome: number = 640
 
   const technology: string[] = [
     'angular.svg',
@@ -28,8 +30,12 @@ export const HomePage = () => {
     'typescript.svg',
     'vector.svg',
   ]
+ 
+
 
   useEffect(() => {
+    
+
     const positions = technology.map(() => ({
       x: Math.random() * (widthHome - 100),
       y: Math.random() * (heightHome - 100),
@@ -97,7 +103,9 @@ export const HomePage = () => {
   }
 
   return (
-    <section>
+    <section id='container-home'>
+
+      <Navegation/>
       <div id="home">
         <div className="profile" style={backgroundStyle}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
