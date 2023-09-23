@@ -99,7 +99,6 @@ export const HomePage = () => {
 
   return (
     <section id="container-home">
-      <Navegation />
       <div id="home">
         <div className="profile" style={backgroundStyle}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
